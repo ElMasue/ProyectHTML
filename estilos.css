@@ -1,0 +1,298 @@
+@font-face{
+    font-family:nexa;
+    src: url(./resources/Nexa-ExtraLight.ttf), url(./resources/Nexa-ExtraLight.ttf);
+}
+@font-face{
+    font-family:nexa2;
+    src: url(./resources/Nexa-Heavy.ttf), url(./resources/Nexa-Heavy.ttf);
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: nexa;
+}
+img[alt="Logo"] {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    width: 120px;
+    z-index: 2;
+    border-radius: 100px;
+    box-shadow: 5px 5px 5px rgb(219, 219, 196);
+}
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url(./img/concesionario_matri.jpg);
+    transition: background-image 1s ease;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+nav {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    top: 10px;
+    z-index: 20;
+}
+nav li {
+    list-style: none;
+}
+#menu>li {
+    width: 15%;
+    float: left;
+}
+#menu a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    background-color: rgb(44, 44, 44);
+    color: gray;
+    transition: .2s;
+}
+#menu a:hover {
+    background-color: rgb(32, 32, 32);
+    color: white;
+    transition: .2s;
+}
+li ul {
+    display: none;
+    transition: .1s;
+}
+li:hover ul {
+    display: block;
+    transition: .1s;
+}
+li>ul a {
+    background-color: white;
+    color: white;
+    transition: .2s;
+}
+li>ul a:hover {
+    background-color: rgb(168, 155, 97);
+    color: rgb(168, 155, 97);
+    transition: .2s;
+}
+
+#start {
+    background-color: lightblue;
+    width: 80%;
+    margin-top: 120px;
+    padding: 20px;
+    text-align: center;
+    font-family: nexa2;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    color: rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px rgb(98, 130, 141);
+    text-shadow: 4px 4px 4px rgb(255, 255, 255);
+    transition: .3s;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#inicio:hover {
+    box-shadow: -5px -5px 5px rgb(98, 130, 141);
+    transition: .3s;
+}
+#textprinc {
+    background-color: rgb(214, 209, 136);
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+    font-family: nexa;
+    word-spacing: 5px;
+    box-shadow: 5px 5px 5px rgb(168, 155, 97);
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+    transition: .3s;
+    border-radius: 5px;
+}
+#textprinc:hover {
+    box-shadow: -5px -5px 5px rgb(168, 155, 97);
+    transition: .3s;
+}
+#text {
+    background-color: rgb(240, 240, 240);
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+    font-family: nexa;
+    word-spacing: 5px;
+    box-shadow: 5px 5px 5px rgb(134, 134, 134);
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+    transition: .3s;
+    border-radius: 5px;
+}
+#text img {
+    width: 70%;
+}
+#textoderecha {
+    width: 50%;
+    padding: 2em;
+}
+#text2:hover {
+    width: 80%;
+    box-shadow: -5px -5px 5px rgb(98, 130, 141);
+    transition: .3s;
+}
+#text2:hover p.hide {
+    display: inline;
+}
+#text2 {
+    background-color: lightblue;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+    font-family: nexa;
+    word-spacing: 5px;
+    box-shadow: 5px 5px 5px rgb(98, 130, 141);
+    text-shadow: 4px 4px 4px rgb(104, 104, 104);
+    transition: .3s;
+    border-radius: 5px;
+}
+#text2 img {
+    width: 70%;
+}
+.hide {
+    display: none;
+}
+.imagen {
+    display: flex;
+    align-items: center;
+}
+.imgen {
+    width: 50%;
+    height: auto;
+}
+#textright {
+    width: 50%;
+    padding: 2em;
+}
+#text:hover {
+    width: 80%;
+    box-shadow: -5px -5px 5px rgb(134, 134, 134);
+    transition: .3s;
+}
+#text:hover p.hide {
+    display: inline;
+}
+figure p {
+    text-align: left;
+}
+figure figcaption {
+    text-align: right;
+}
+
+form {
+    width: 60%;
+    position: relative;
+    top: 80px;
+    background-color: rgb(230, 151, 151);
+    color: black;
+}
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: rgb(230, 151, 151);
+}
+table {
+    margin: 20px auto;
+}
+table, th, td {
+    border-color: rgb(158, 104, 104);
+    border-width: 1px;
+    border-style: solid;
+    border-collapse: collapse;
+    background-color: rgb(230, 151, 151);
+}
+td {
+    padding: 10px;
+}
+th {
+    padding: 10px;
+    text-align: right;
+}
+td[colspan="2"] {
+    text-align: center;
+}
+input {
+    color: black;
+}
+textarea {
+    color: black;
+}
+input[type="submit"], input[type="reset"] {
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 0.5px;
+    box-shadow: 3px 3px grey;
+    font-size: 0.8em;
+    transition: .2s;
+    color: black;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+    box-shadow: 3px 3px rgb(158, 104, 104);
+    font-weight: bold;
+    transition: .2s;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+footer p {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 13px;
+}
+
+    #popup-background {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+      }
+  
+      #popup-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        text-align: center;
+      }
+  
+      #close-btn {
+        margin-top: 15px;
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }

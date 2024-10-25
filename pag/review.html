@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía</title>
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="shortcut icon" href="../img/_a36a5ab3-cc5b-486a-b342-a93397063d9a.jpeg">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/Logo masus.jpg" alt="Logo"></a>
+        <nav>
+            <ul id="menu">
+                <li><a href="./cohes/cars.html">Nuestros Coches</a></li>
+                <li><a href="./offers.html">Ofertas</a></li>
+                <li><a href="./concessionaire.html">Concesionarios</a></li>
+                <li><a href="">Masus Contigo</a>
+                    <ul>
+                        <li><a href="./Accesories.html">Accesorios</a></li>
+                        <li><a href="./clients.html">Atencion al cliente</a></li>
+                        <li><a href="./manual.html">Manuales</a></li>
+                    </ul>
+                </li>
+                <li><a href="./review.html">Calificaciones</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="programa.php" method="post">
+        <fieldset>
+            <legend>-¿Que le ha parecido?-</legend>
+            <table>
+                <tr>
+                    <th>
+                        <label for="name">Nombre*</label>
+                    </th>
+                    <td>
+                        <input type="text" name="name" placeholder="Introduzca nombre y apellidos" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="email">Correo Electronico*</label>
+                    </th>
+                    <td>
+                        <input type="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="motive">Que le ha interesado</label>
+                    </th>
+                    <td>
+                        <input list="browsers" name="browser" id="browser">
+                        <datalist id="browsers">
+                            <option value="Los coches">
+                            <option value="La pagina">
+                            <option value="Los accesorios">
+                            <option value="La atencion al cliente">
+                            <option value="Otro">
+                        </datalist> 
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="radio">Que marca prefiere</label>
+                    </th>
+                    <td>
+                        <input type="radio" name="interest" id="interest" value="Renault">
+                        <label for="Renault">Renault</label>
+                        <input type="radio" name="interest" id="interest" value="Ford">
+                        <label for="Ford">Ford</label>
+                        <input type="radio" name="interest" id="interest" value="Volkswagen">
+                        <label for="Volkswagen">Volkswagen</label>
+                        <input type="radio" name="interest" id="interest" value="other">
+                        <label for="other">Otros</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="value">Introduzca un número del 1 al 10 basado en cuanto le ha gustado</label>
+                        <input type="number" name="value" id="value" max="10" min="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="coment">Comentarios</label><br>
+                        <textarea name="coment" id="coment" cols="50" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" value="Privacy" required>
+                        <label for="Privacy">Acepto la política de privacidad*</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Enviar" id="Enviar">
+                        <input type="reset" value="Cancelar" id="Cancelar">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>    
+    <footer>
+        <p>Copyright 2024 - Samuel Corado Cañete</p>
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
